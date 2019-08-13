@@ -24,9 +24,7 @@ const placeDetail = ({ selectedPlace, onModalClosed, onItemDeleted }) => {
                 : null
             }
             <View>
-                <TouchableOpacity>
-                    {/* <Icon size={30} name="ios-trash" color="red" /> */}
-                </TouchableOpacity>
+                <Button title="Delete" onPress={onItemDeleted} color="red" />
                 <Button title="Close" onPress={onModalClosed} />
             </View>
         </View>
@@ -49,4 +47,4 @@ const styles = StyleSheet.create ({
     }
 })
 
-export default placeDetail
+export default placeDetail;
